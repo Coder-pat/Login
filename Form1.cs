@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Login
+namespace Address_Book
 {
     public partial class Form1 : Form
     {
@@ -22,12 +22,14 @@ namespace Login
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text;
-            string password = textBox2.Text;
-            MessageBox.Show($"Username: {username}\nPassword: {password}");
-
+            Properties.Settings.Default.Save();
         }
     }
 }
